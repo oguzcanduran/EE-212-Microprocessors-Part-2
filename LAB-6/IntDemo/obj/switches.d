@@ -1,0 +1,9 @@
+.\obj\switches.o: src\switches.c
+.\obj\switches.o: C:\Keil_v5\ARM\INC\Freescale\Kinetis\MKL25Z4.H
+.\obj\switches.o: C:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h
+.\obj\switches.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\switches.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\switches.o: C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\switches.o: C:\Keil_v5\ARM\INC\Freescale\Kinetis\system_MKL25Z4.h
+.\obj\switches.o: inc\switches.h
+.\obj\switches.o: inc\gpio_defs.h

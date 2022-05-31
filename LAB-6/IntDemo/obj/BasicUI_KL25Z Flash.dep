@@ -1,0 +1,30 @@
+Dependencies for Project 'BasicUI', Target 'KL25Z Flash': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\startup_MKL25Z4.s)(0x62719D10)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Freescale\Kinetis--pd "__UVISION_VERSION SETA 536"--list .\lst\startup_mkl25z4.lst --xref -o .\obj\startup_mkl25z4.o --depend .\obj\startup_mkl25z4.d)
+F (.\src\system_MKL25Z4.c)(0x5209EF24)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Freescale\Kinetis-D__UVISION_VERSION="536"-o .\obj\system_mkl25z4.o --omf_browse .\obj\system_mkl25z4.crf --depend .\obj\system_mkl25z4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\MKL25Z4.h)(0x559D2752)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\system_MKL25Z4.h)(0x559D2752)
+F (.\src\main.c)(0x627575ED)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Freescale\Kinetis-D__UVISION_VERSION="536"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\MKL25Z4.H)(0x559D2752)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\system_MKL25Z4.h)(0x559D2752)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x602569C4)
+I (inc\switches.h)(0x6274169C)
+I (inc\gpio_defs.h)(0x51A5AB40)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x602569C8)
+F (.\src\switches.c)(0x62757476)(-c --cpu Cortex-M0+ -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Freescale\Kinetis-D__UVISION_VERSION="536"-o .\obj\switches.o --omf_browse .\obj\switches.crf --depend .\obj\switches.d)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\MKL25Z4.H)(0x559D2752)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm0plus.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x602569CE)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559D31EA)
+I (C:\Keil_v5\ARM\INC\Freescale\Kinetis\system_MKL25Z4.h)(0x559D2752)
+I (inc\switches.h)(0x6274169C)
+I (inc\gpio_defs.h)(0x51A5AB40)
