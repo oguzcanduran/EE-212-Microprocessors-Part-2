@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Oguz Can Duran, Bilkent , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Oguz\Desktop\212\LAB-4\Chapter3\chapter3.uvprojx
+Project File Date:  04/13/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+compiling system_MKL25Z4.c...
+module3.c(17): warning: non-portable path to file '<MKL25Z4.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <MKL25Z4.H>
+         ^~~~~~~~~~~
+         <MKL25Z4.h>
+module3.c(72): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'char' [-Wimplicit-int-conversion]
+        if (key!=13) {keys[key]=key;}}
+                               ~^~~
+module3.c(134): warning: explicitly assigning value of variable of type 'int' to itself [-Wself-assign]
+                                                tempkey=tempkey;}
+                                                ~~~~~~~^~~~~~~~
+module3.c(149): warning: explicitly assigning value of variable of type 'int' to itself [-Wself-assign]
+                                                tempkey=tempkey;}
+                                                ~~~~~~~^~~~~~~~
+module3.c(180): warning: variable 'result' may be uninitialized when used here [-Wconditional-uninitialized]
+                if (result<0){
+                    ^~~~~~
+module3.c(38): note: initialize the variable 'result' to silence this warning
+        int tempdigit,choose,result,rem,resultcheck,tempkey;
+                                   ^
+                                    = 0
+module3.c(165): warning: variable 'choose' may be uninitialized when used here [-Wconditional-uninitialized]
+    switch (choose){
+            ^~~~~~
+module3.c(38): note: initialize the variable 'choose' to silence this warning
+        int tempdigit,choose,result,rem,resultcheck,tempkey;
+                            ^
+                             = 0
+module3.c(98): warning: variable 'tempdigit' may be uninitialized when used here [-Wconditional-uninitialized]
+            temp1=temp1*10+tempdigit;
+                           ^~~~~~~~~
+module3.c(38): note: initialize the variable 'tempdigit' to silence this warning
+        int tempdigit,choose,result,rem,resultcheck,tempkey;
+                     ^
+                      = 0
+module3.c(352): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling module3.c...
+linking...
+Program Size: Code=2272 RO-data=228 RW-data=0 ZI-data=352  
+".\Objects\chapter3.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\Oguz\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Oguz\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Source file:   Device\Source\system_MKL25Z4.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
