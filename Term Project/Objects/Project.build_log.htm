@@ -1,0 +1,267 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Oguz Can Duran, Bilkent , LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Oguz\Desktop\212\Project\Project Last\Project.uvprojx
+Project File Date:  05/31/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: non-portable path to file '<MKL25Z4.h>'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include <MKL25Z4.H>
+         ^~~~~~~~~~~
+         <MKL25Z4.h>
+main.c(3): warning: In file included from...
+./lcd.h(1): warning: non-portable path to file '"MKL25Z4.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "mkl25z4.h"
+         ^~~~~~~~~~~
+         "MKL25Z4.h"
+./lcd.h(40): warning: no newline at end of file [-Wnewline-eof]
+void lcd_scroll_screen(unsigned char row_number,char* text);
+                                                            ^
+main.c(10): warning: no previous extern declaration for non-static variable 'delay' [-Wmissing-variable-declarations]
+int delay = 100;
+    ^
+main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int delay = 100;
+^
+main.c(11): warning: no previous extern declaration for non-static variable 'direction' [-Wmissing-variable-declarations]
+int direction = 0;
+    ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int direction = 0;
+^
+main.c(12): warning: no previous extern declaration for non-static variable 'count' [-Wmissing-variable-declarations]
+int count=0;
+    ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int count=0;
+^
+main.c(15): warning: no previous extern declaration for non-static variable 'finishflag' [-Wmissing-variable-declarations]
+volatile int finishflag=0;
+             ^
+main.c(15): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int finishflag=0;
+         ^
+main.c(16): warning: no previous extern declaration for non-static variable 'pompa' [-Wmissing-variable-declarations]
+volatile int pompa=0;
+             ^
+main.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int pompa=0;
+         ^
+main.c(22): warning: no previous extern declaration for non-static variable 'previous' [-Wmissing-variable-declarations]
+volatile int previous=0;
+             ^
+main.c(22): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int previous=0;
+         ^
+main.c(23): warning: no previous extern declaration for non-static variable 'current' [-Wmissing-variable-declarations]
+volatile int current=0;
+             ^
+main.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int current=0;
+         ^
+main.c(26): warning: no previous extern declaration for non-static variable 'interval' [-Wmissing-variable-declarations]
+volatile unsigned int interval=0; //interval for input capture-time between rising edge
+                      ^
+main.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile unsigned int interval=0; //interval for input capture-time between rising edge
+         ^
+main.c(34): warning: declaration shadows a variable in the global scope [-Wshadow]
+    int j;
+        ^
+main.c(24): note: previous declaration is here
+int j;
+    ^
+main.c(32): warning: no previous prototype for function 'delayMs' [-Wmissing-prototypes]
+void delayMs(int n) {
+     ^
+main.c(32): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delayMs(int n) {
+^
+static 
+main.c(45): warning: no previous extern declaration for non-static variable 'steps' [-Wmissing-variable-declarations]
+const char steps[ ] = {0x9, 0x3, 0x6, 0xC}; //1001,0101,0110,1100
+           ^
+main.c(45): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char steps[ ] = {0x9, 0x3, 0x6, 0xC}; //1001,0101,0110,1100
+      ^
+main.c(46): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int i = 0;    
+    ^
+main.c(46): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i = 0;    
+^
+main.c(51): warning: implicit declaration of function 'init_pins' is invalid in C99 [-Wimplicit-function-declaration]
+                init_pins();
+                ^
+main.c(52): warning: implicit declaration of function 'init_timer' is invalid in C99 [-Wimplicit-function-declaration]
+                init_timer();
+                ^
+main.c(132): warning: 'sprintf' will always overflow; destination buffer has size 10, but format string expands to at least 14 [-Wfortify-source]
+                sprintf(buffer,"Volume: %d mml", pompa);
+                ^
+main.c(158): warning: declaration shadows a variable in the global scope [-Wshadow]
+                unsigned int current=0;
+                             ^
+main.c(23): note: previous declaration is here
+volatile int current=0;
+             ^
+main.c(163): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                current |= (ctr <<16); // add the no. of overflows. current = CnV + ctr*MOD [(ctr*2^16)]
+                                        ~~  ~~~~^~~~
+main.c(168): warning: implicit conversion turns floating-point number into integer: 'double' to 'int' [-Wfloat-conversion]
+                                distance = interval * 0.10468;
+                                         ~ ~~~~~~~~~^~~~~~~~~
+main.c(155): warning: no previous prototype for function 'TPM1_IRQHandler' [-Wmissing-prototypes]
+void TPM1_IRQHandler(){
+     ^
+main.c(155): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TPM1_IRQHandler(){
+^
+static 
+main.c(155): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void TPM1_IRQHandler(){
+                    ^
+main.c(183): warning: declaration shadows a variable in the global scope [-Wshadow]
+int calculate_time(int interval){
+                       ^
+main.c(26): note: previous declaration is here
+volatile unsigned int interval=0; //interval for input capture-time between rising edge
+                      ^
+main.c(183): warning: no previous prototype for function 'calculate_time' [-Wmissing-prototypes]
+int calculate_time(int interval){
+    ^
+main.c(183): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int calculate_time(int interval){
+^
+static 
+main.c(188): warning: no previous prototype for function 'calculate_distance' [-Wmissing-prototypes]
+int calculate_distance(int time){
+    ^
+main.c(188): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int calculate_distance(int time){
+^
+static 
+main.c(13): warning: no previous extern declaration for non-static variable 'data' [-Wmissing-variable-declarations]
+volatile int data;
+             ^
+main.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int data;
+         ^
+main.c(14): warning: no previous extern declaration for non-static variable 'data_array' [-Wmissing-variable-declarations]
+volatile int data_array[60];
+             ^
+main.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int data_array[60];
+         ^
+main.c(17): warning: no previous extern declaration for non-static variable 'p' [-Wmissing-variable-declarations]
+volatile int p;
+             ^
+main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int p;
+         ^
+main.c(18): warning: no previous extern declaration for non-static variable 'temparea' [-Wmissing-variable-declarations]
+volatile int temparea;
+             ^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int temparea;
+         ^
+main.c(19): warning: no previous extern declaration for non-static variable 'pompadelay' [-Wmissing-variable-declarations]
+volatile int pompadelay;
+             ^
+main.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int pompadelay;
+         ^
+main.c(20): warning: no previous extern declaration for non-static variable 'f' [-Wmissing-variable-declarations]
+volatile int f;
+             ^
+main.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int f;
+         ^
+main.c(21): warning: no previous extern declaration for non-static variable 'distance' [-Wmissing-variable-declarations]
+volatile int distance;
+             ^
+main.c(21): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile int distance;
+         ^
+main.c(24): warning: no previous extern declaration for non-static variable 'j' [-Wmissing-variable-declarations]
+int j;
+    ^
+main.c(24): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int j;
+^
+main.c(25): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+char buffer[10];
+     ^
+main.c(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char buffer[10];
+^
+main.c(39): warning: no previous extern declaration for non-static variable 'm' [-Wmissing-variable-declarations]
+        volatile        int m;
+                            ^
+main.c(39): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+        volatile        int m;
+                        ^
+main.c(3): warning: In file included from...
+./lcd.h(34): warning: unused function 'write_to_data_pins' [-Wunused-function]
+static void write_to_data_pins(unsigned char data);
+            ^
+37 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=3272 RO-data=212 RW-data=0 ZI-data=424  
+".\Objects\Project.axf" - 0 Error(s), 37 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.15.0.pack
+                Keil.Kinetis_KLxx_DFP.1.15.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\Oguz\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Oguz\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Include file:  Device\Source\system_MKL25Z4.h
+      Source file:   Device\Source\system_MKL25Z4.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
